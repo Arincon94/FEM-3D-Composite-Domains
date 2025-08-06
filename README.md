@@ -17,10 +17,22 @@ While a separate repository contains the theoretical formulation of the finite e
 As a demonstrative case, this repository simulates a **unit cell of a sandwich-type metastructure**, composed of:
 
 - **PolyJet DM 8510**: used in the walls of the unit cell.
-- **PolyJet DM 8430**: used in the internal resonator.
+- **An aproximation of PolyJet DM 8430**: used in the internal resonator.
 - **AS4/3501-6 composite**: a carbon fiber/epoxy material with anisotropic properties, used in the top and bottom constraining layers.
 - An **empty (void) region** that represents zones with no material contribution (modeled with zero stiffness).
 
 This anisotropic material is defined by explicitly specifying its element-wise stiffness matrix \( \mathbf{C} \), which can be adapted by the user for other composite laminates or fiber orientations.
 
 ---
+
+##  Repository Structure
+
+```bash
+FEM-3D-Heterogeneous
+├── main.m                     # Main script to run the simulation
+├── DM_Mid.mat                 # DM 8430 properties in the frequency domain
+├── Res_top.mat                # Different resonators topologies
+├── ElementStiffness.m         # Defines the elementary stiffness matrix for the isotropic materials
+├── ElementMass.m              # Defines the elementary mass matrix for the isotropic materials
+├── orthocl.m                  # Defines the constitutive matrix, D, for the anisotropic materials (by the Professor Marcelo Trindade)
+├── ElementStiffness_comp.m    # Defines the elementary stiffness matrix for the anisotropic materials
