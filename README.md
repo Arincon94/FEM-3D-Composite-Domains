@@ -21,7 +21,7 @@ As a demonstrative case, this repository simulates a **unit cell of a sandwich-t
 - **AS4/3501-6 composite**: a carbon fiber/epoxy material with anisotropic properties, used in the top and bottom constraining layers.
 - An **empty (void) region** that represents zones with no material contribution (modeled with zero stiffness).
 
-This anisotropic material is defined by explicitly specifying its element-wise stiffness matrix \( \mathbf{C} \), which can be adapted by the user for other composite laminates or fiber orientations.
+This anisotropic material is defined by explicitly specifying its element-wise stiffness matrix, which can be adapted by the user for other composite laminates or fiber orientations.
 
 ---
 
