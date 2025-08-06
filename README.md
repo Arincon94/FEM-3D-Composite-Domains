@@ -1,6 +1,6 @@
 # 3D Finite Element Simulation of Heterogeneous Domains in MATLAB
 
-This repository provides a customizable MATLAB implementation for simulating 3D solid structures using the Finite Element Method (FEM). It supports domains composed of elements with different materials and sizes, enabling the modeling of heterogeneous media such as optimized metamaterials, periodic unit cells, and structures with embedded resonating regions.
+This repository provides a customizable MATLAB implementation for simulating 3D solid structures using the Finite Element Method (FEM). It supports domains composed of elements with different materials and sizes, enabling the modeling of heterogeneous media.
 
 ---
 
